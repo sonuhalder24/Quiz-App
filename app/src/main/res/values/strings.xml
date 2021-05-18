@@ -1,4 +1,17 @@
 <resources>
-    <string name="app_name">Quiz</string>
+    <string name="app_name">Quizeee</string>
+    <string name="python">Python</string>
+    <string name="java">Java</string>
+    <string name="quizeee">Quizeee</string>
+    <string name="_quizeee_">~ Quizeee ~</string>
+    <string name="_java_">Java</string>
+    <string name="_10_questions">10 Questions</string>
+    <string name="_python_">Python</string>
+    <string name="java_questions">JAVA Questions</string>
+    <string name="question_1">Question 1</string>
+    <string name="next">Next</string>
+    <string name="your_score_0">Your score : 0</string>
+    <string name="your_score">Your Score :</string>
+    <string name="python_questions">PYTHON Questions</string>
 
 </resources>

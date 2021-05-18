@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA000"
+    android:orientation="vertical"
+
+    tools:context=".StartActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="50dp"
+        android:textColor="#8E0F41"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/_quizeee_"
+        android:textStyle="bold|italic"
+        android:fontFamily="sans-serif-condensed"
+        />
+    <ImageView
+        android:src="@drawable/book"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".50"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            android:layout_marginBottom="30dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/java_linearlayout"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:src="@drawable/java" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="2.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.2"
+                    android:gravity="center"
+                    android:text="@string/_java_"
+                    android:textColor="#75169E"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:text="@string/_10_questions"
+                    android:textColor="#403345" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/python_linearlayout"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:paddingTop="10dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:src="@drawable/python" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="2.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.2"
+                    android:gravity="center"
+                    android:text="@string/_python_"
+                    android:textColor="#75169E"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:text="@string/_10_questions"
+                    android:textColor="#403345" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,30 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#FFA000"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/brain"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/brain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="20dp"
 
-    <Button
-        android:id="@+id/button"
+        />
+    <RelativeLayout
+       app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/first_line"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:background="@drawable/white"
+            android:layout_toLeftOf="@+id/second_line" />
+        <View
+            android:id="@+id/second_line"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/pink"
+           android:layout_centerHorizontal="true"
+           />
+        <View
+            android:id="@+id/third_line"
+            android:layout_width="20dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/green"
+            android:layout_toRightOf="@+id/second_line"/>
+        <View
+            android:id="@+id/fourth_line"
+            android:layout_width="20dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/white"
+            android:layout_toRightOf="@+id/third_line"/>
+
+        <View
+            android:id="@+id/fifth_line"
+            android:layout_width="20dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/green"
+            android:layout_toRightOf="@+id/fourth_line"/>
+        <View
+            android:id="@+id/sixth_line"
+            android:layout_width="20dp"
+            android:layout_height="220dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/pink"
+            android:layout_toRightOf="@+id/fifth_line"/>
+        <View
+            android:id="@+id/seventh_line"
+            android:layout_width="20dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/white"
+            android:layout_toRightOf="@+id/sixth_line"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quesion 1"
         android:layout_centerInParent="true"
-        android:textColor="#000000"
-        android:background="#CE93D8"
-        android:textSize="24sp"
-        android:textStyle="bold"/>
+        android:fontFamily="cursive"
+        android:text="@string/quizeee"
+        android:textColor="@android:color/white"
+        android:textSize="90sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.462" />
 
-    <Button
-        android:id="@+id/button2"
+    <TextView
+        android:id="@+id/java"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:textColor="#000000"
-        android:textSize="18sp"/>
-</RelativeLayout>
+        android:text="@string/java"
+        android:textStyle="bold|italic"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="20dp"
+        android:background="@drawable/java_background"
+        android:padding="20dp"
+        android:textColor="#6F1795"
+        app:layout_constraintLeft_toRightOf="@+id/brain"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/brain"
+        android:layout_marginRight="20dp"
+        />
+    <TextView
+        android:id="@+id/python"
+        android:padding="20dp"
+        android:background="@drawable/python_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/python"
+        android:textStyle="bold|italic"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="#6F1795"
+        app:layout_constraintRight_toLeftOf="@+id/brain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/brain"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
